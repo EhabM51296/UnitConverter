@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/unit"
+        android:background="@drawable/customspinner_design"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custominput"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:hint="input"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+            tools:ignore="Autofill,RtlCompat" />
+        <Spinner
+            android:id="@+id/input_unit"
+            android:background="@drawable/customspinner_design"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:paddingTop="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/custominput"
+            android:paddingStart="15dp"
+            android:hint="output"
+            android:layout_below="@id/input"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+            tools:ignore="RtlCompat" />
+
+        <Spinner
+            android:id="@+id/output_unit"
+            android:background="@drawable/customspinner_design"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:layout_below="@id/input_unit"
+            android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/switch_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="switch"
+        android:background="@drawable/custombutton_design"
+        android:onClick="switchvalues"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/convert_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Convert"
+        android:onClick="convertInput"
+        android:background="@drawable/custombutton_design2"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        />
+
+
+</LinearLayout>
